@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="proyecto.acanteror.com.testgesturesnumbers.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="___"
+            android:textSize="40sp"
+            android:layout_weight="2"
+            android:id="@+id/num1"
+            android:background="#000000"
+            android:textColor="#0000ff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:id="@+id/operador"
+            android:background="#000000"
+            android:textColor="#0000ff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="___"
+            android:textSize="40sp"
+            android:layout_weight="2"
+            android:id="@+id/num2"
+            android:background="#000000"
+            android:textColor="#0000ff"/>
+        <!--
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="="
+                    android:textSize="40sp"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:textColor="#0000ff"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="__"
+                    android:textSize="40sp"
+                    android:layout_weight="2"
+                    android:id="@+id/resultado"
+                    android:background="#000000"
+                    android:textColor="#0000ff"/>
+        -->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#000000"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.gesture.GestureOverlayView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:id="@+id/GV"
+                    android:gestureStrokeType="multiple"
+                    android:fadeOffset="800"
+                    android:padding="20dp"
+                    android:background="#ffffff"
+                    android:gestureColor="#ff0000"></android.gesture.GestureOverlayView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="info"
+        android:textColor="#0000ff"
+        android:textSize="40dp"
+        android:background="#000000"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/generar"
+        android:text="Generar"/>
+
+</LinearLayout>
